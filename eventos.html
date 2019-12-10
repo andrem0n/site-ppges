@@ -1,0 +1,182 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Eventos</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+
+        jQuery("#subirTopo").hide();
+
+        jQuery('a#subirTopo').click(function () {
+                 jQuery('body,html').animate({
+                   scrollTop: 0
+                 }, 800);
+                return false;
+           });
+
+        jQuery(window).scroll(function () {
+                 if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                 } else {
+                    jQuery('#subirTopo').fadeOut();
+                 }
+             });
+        });
+            
+            
+        function trocar(){
+        var obj=document.getElementById('apresentacao');
+        if(obj.className==''){
+            obj.className='apresent';
+        }
+        }
+        </script>
+    </head>
+    
+    <body>
+        <div class="menu">
+            <a  href="index.html"> <img src="icone.png" class="img-fluid" style="width: 40%; height: auto; margin-left: 3%; margin-top: 3%; margin-bottom: 1%;"> </a> 
+            <a  href="index.html"> <img src="uni.png"  style="width: 13%; height: auto; margin-right: 5%;" class="rounded float-right" class="img-fluid"> </a> 
+            
+        </div> 
+       
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white"  id="navbar-example3" style="max-width: 18rem; float:left; margin-top: 3%; margin-left: 3%; border-radius: none;  "   >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupporteContent" aria-controls="navbarSupporteContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupporteContent">
+                <nav class="nav flex-column">
+                   
+                        <a  class="card-header bg-transparent border-success" style="color:  #000;" >MENU</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="index.html">Home</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="informes.html">Informes</a>
+                     
+                        <a class="nav-link" style="color:  #000;"  href="coord.html">Coordenação</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="prof.html">Professores Orientadores</a>
+                                            
+                        <a class="nav-link" style="color:  #000;"  href="eventos.html">Eventos</a>
+                       
+                        <a class="nav-link" style="color:  #000;"  href="ciclo.html">Ciclo de Seminários e Palestras</a>
+                    
+                        <a class="nav-link" style="color:  #000;"  href="disc.html">Disciplinas do Mestrado</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="aluno.html">Alunos</a>
+                      
+                        <a class="nav-link" style="color:  #000;" href="publi.html">Publicações </a>
+                        
+                </nav>
+            </div>
+        </nav>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white"  id="navbar-example3" style="max-width: 16.5rem; float:right; margin-top: 3%; margin-right:2%; border-radius: none;  "   >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupporteContent" aria-controls="navbarSupporteContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupporteContent">
+                <nav class="nav flex-column">
+                    <a  class="card-header bg-transparent border-success">EVENTOS</a>
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="color: black;">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true" style="color: black; border-radius: none;">Eventos Regionais</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" style="color: black;  border-radius: none;">Eventos Nascionais</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false" style="color: black; border-radius: none;">Eventos Internacionais</a>
+                        
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        
+         <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+            <div class="container" style="max-width: 53.5%;  margin-left: 25.7%; padding-top: 2%; margin-bottom: 3%;" >
+                <div class="row">
+                    <div class="col">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <table class="table">
+                                   
+                                        <tr  >
+                                          <th  id="item-1">Eventos Regionais</th>
+                                        </tr>
+                                   
+                                    <tbody >
+                                        <tr>
+                                            <td > 
+                                                <p  class="text recuo"> 17ª Escola Regional de Redes de Computadores. A XVII Escola Regional de Redes de Computadores (ERRC 2019) ocorrerá em Alegrete, RS, no período de 16 a 19 de setembro de 2019, durante a Semana Farroupilha. A ERRC 2019 está sendo organizado pelo Programa de Pós-graduação em Engenharia de Software (PPGES) da Universidade Federal do Pampa (Unipampa), pelo Instituto Federal Farroupilha (IFFar) e pelo Parque Científico e Tecnológico do Pampa (PampaTec), com a colaboração de diversas outras instituições de ensino, pesquisa e extensão. A ERRC é realizada anualmente pela Sociedade Brasileira de Computação (SBC) e acompanha a filosofia de outras escolas realizadas no Estado, como a Escola Regional de Alto Desempenho (ERAD) e a Escola Regional de Banco de Dados (ERBD). Confira aqui o Cartaz do evento.</p>
+
+                                                <p  class="text recuo"> 3ª Escola Regional de Engenharia de Software. A Escola Regional de Engenharia de Software (ERES) é um evento promovido anualmente pela Sociedade Brasileira de Computação (SBC) . A terceira edição do evento, a ERES 2019, ocorrerá em Rio do Sul (SC), região do Alto Vale do Itajaí, no período de 07 a 09 de outubro de 2019, e será organizada conjuntamente pelo Instituto Federal Catarinense (IFC) e pela Universidade do Estado de Santa Catarina (UDESC). O objetivo da ERES é promover e disseminar o conhecimento e boas práticas de Engenharia de Software, tanto do ponto de vista profissional quanto acadêmico. A ERES 2019 é um espaço regional onde são apresentados resultados de pesquisa (graduação e pós-graduação) e relatos de experiência na indústria. O evento oferece um ambiente propício para discussão de abordagens de ensino-aprendizagem em Engenharia de Software nas instituições de ensino superior da região Sul do Brasil, e também para troca de experiências quanto à aplicação de métodos/técnicas de Engenharia de Software nas indústrias desta região.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <table class="table">
+                                   
+                                        <tr  >
+                                          <th  id="item-1">Eventos Nascionais</th>
+                                        </tr>
+                                   
+                                    <tbody >
+                                        <tr>
+                                            <td > 
+                                                <p  class="text recuo"> I Workshop M&S-SIS. O objetivo do  Workshop de Modelagem e Simulação de Sistemas Intensivos em Software (M&S-SIS), além de delinear a comunidade brasileira que trabalha com simulações no contexto de engenharia de software, é oferecer um ambiente para discussão das possíveis sinergias entre o paradigma de modelagem e simulação (M&S) predominante na Engenharia de Sistemas e a Engenharia de Software. Além disso,  aborda as pesquisas em Engenharia de Software Dirigida por Modelos, em particular, no que tange aos modelos em tempo de execução. Também aceita trabalhos discutindo como representar fidedignamente software utilizando modelos de simulação de modo a possibilitar que simuladores e interpretadores de modelos executáveis possam tornar-se plataformas de apoio às diversas etapas do processo de desenvolvimento de software.</p>
+
+                                                <p  class="text recuo">IX Brazilian Symposium on Computing Systems Engineering.  The Brazilian Symposium on Computing Systems Engineering (SBESC) is an initiative of the research community originally associated with three events, the Operating Systems Workshop (WSO), Embedded Systems Workshop (WSE) and Real-Time Systems Workshop (WTR), acknowledging the strong synergy between these three areas, and also motivated by the fact that the design of computing systems is an increasingly multidisciplinary task. Since 2013, the Brazilian Conference on Critical Embedded Systems (CBSEC) is also part of SBESC. In order to further strengthen the integration between these communities and to better represent the interdisciplinarity found in many research initiatives, since 2015 SBESC is no longer divided into separated tracks. Instead, a broad list of topics of interest is presented, covering the main aspects of the original SBESC tracks. SBESC 2019 became an IEEE-IES sponsored event.</p>
+                                                
+                                                <p  class="text recuo">The Brazilian Conference on Software: Theory and Practice (CBSoft) is an annual event promoted by the Brazilian Computer Society (SBC), aiming at promoting and encouraging the exchange of experiences among researchers and practioneers from the industry and academia on the latest research, trends and innovations – practical and theoretical – concerning software. Held since 2010, CBSoft has become one of the most important events of the Brazilian scientific computing community, and each year the numbers of submissions of scientific papers and participants have been increasing.  CBSoft 2019 integrates four traditional events organized by the Brazilian software development community: XXXIII Brazilian Symposium on Software Engineering (SBES 2019) XXIII Brazilian Symposium on Programming Languages (SBLP 2019) XIII Brazilian Symposium on Components, Architectures and Software Reuse (SBCARS 2019) IV Brazilian Symposium on Systematic and Automated Software Testing (SAST 2019).</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col" id="item-5">Eventos Internacionais</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 
+                                                <p  class="text recuo">  9th Latin-American Symposium on Dependable Computing. LADC is the major Latin-American event on computer system dependability. The LADC 2019 program will present technical sessions, workshops, tutorials, fast abstracts, keynote talks from international experts in the area and an industrial track. The symposium scope includes recent research results on software and system dependability. LADC is the Latin-American event oriented to disseminate computer system dependability and security research advances. This year, LADC 2019 will be held in conjunction with the IX Brazilian Symposium on Computing Systems Engineering (SBESC) in Natal, Brazil from the 19th to the 21st of November 2019. The LADC symposium scope includes both dependability and security research works, as well as research on the technological challenges that they entail for the design, verification and validation and maintenance of systems, software, and hardware.
+                                                </p> 
+                                                <p  class="text recuo">   The ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM) is the premier conference for presenting research results related to empirical software engineering. ESEM provides a stimulating forum where researchers and practitioners can present and discuss recent research results on a wide range of topics, in addition to exchanging ideas, experiences and challenging problems. The 13th edition of ESEM will be held in Porto de Galinhas, Brazil, from September 16th to 20th, 2019 as part of the Empirical Software Engineering International Week.
+                                                </p>  
+                                                <p  class="text recuo">   ER 2019 – 38th International Conference on Conceptual Modeling. The International Conference on Conceptual Modeling (ER) is the leading international forum for presenting and discussing current research on conceptual modeling. The topics of interest span the entire spectrum of conceptual modeling including research and practice in areas such: theories of concepts underlying conceptual modeling, methods and tools for developing and communicating conceptual models, techniques for transforming conceptual models into effective implementations, and the impact of conceptual modeling techniques on databases, business strategies and information systems development.
+                                                </p>  
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+        
+         <a id="subirTopo">
+                ^ TOPO <br> 
+        </a>
+        <div class="rodape">
+            <nav class="navbar navbar-white bg-white">
+                <span class="navbar">© 2014 Universidade Federal do Pampa - UNIPAMPA</span>
+            </nav>
+        </div>
+    </body>
+</html>

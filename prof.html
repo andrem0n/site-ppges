@@ -1,0 +1,256 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Professores</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+
+        jQuery("#subirTopo").hide();
+
+        jQuery('a#subirTopo').click(function () {
+                 jQuery('body,html').animate({
+                   scrollTop: 0
+                 }, 800);
+                return false;
+           });
+
+        jQuery(window).scroll(function () {
+                 if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                 } else {
+                    jQuery('#subirTopo').fadeOut();
+                 }
+             });
+        });
+            
+            
+        function trocar(){
+        var obj=document.getElementById('apresentacao');
+        if(obj.className==''){
+            obj.className='apresent';
+        }
+        }
+        </script>
+    </head>
+    
+    <body>
+        <div class="menu">
+            <a  href="index.html"> <img src="icone.png" class="img-fluid" style="width: 40%; height: auto; margin-left: 3%; margin-top: 3%; margin-bottom: 1%;"> </a> 
+            <a  href="index.html"> <img src="uni.png"  style="width: 13%; height: auto; margin-right: 5%;" class="rounded float-right" class="img-fluid"> </a> 
+            
+        </div> 
+       
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white"  id="navbar-example3" style="max-width: 18rem; float:left; margin-top: 3%; margin-left: 3%; border-radius: none;  "   >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupporteContent" aria-controls="navbarSupporteContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupporteContent">
+                <nav class="nav flex-column">
+                   
+                        <a  class="card-header bg-transparent border-success" style="color:  #000;" >MENU</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="index.html">Home</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="informes.html">Informes</a>
+                     
+                        <a class="nav-link" style="color:  #000;"  href="coord.html">Coordenação</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="prof.html">Professores Orientadores</a>
+                                            
+                        <a class="nav-link" style="color:  #000;"  href="eventos.html">Eventos</a>
+                       
+                        <a class="nav-link" style="color:  #000;"  href="ciclo.html">Ciclo de Seminários e Palestras</a>
+                    
+                        <a class="nav-link" style="color:  #000;"  href="disc.html">Disciplinas do Mestrado</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="aluno.html">Alunos</a>
+                      
+                        <a class="nav-link" style="color:  #000;" href="publi.html">Publicações </a>
+                        
+                </nav>
+            </div>
+        </nav>
+        
+        <div class="card text-center" style="width: 71%; margin-left: 25.7%; margin-top: 3%; ">
+            <div class="card-header" style="border-bottom: 1px solid rgba(45, 132, 45, 0.31); ">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="color: #2d842d">Professor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="color: #2d842d">Descrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="color: #2d842d">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h5 class="card-title" style="text-align: justify;">Prof. Dr. Arthur Francisco Lorenzon </h5>
+                        <p class="card-text" style=" text-align: justify;">Áreas de pesquisa:</p>
+                        
+                        <p style="text-align: justify;" class="text recuo"> Organização e arquitetura de computadores, Sistemas embarcados e Computação de alto desempenho. </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <p style="text-align: justify;" class="text recuo">  Arthur participa de diversos projetos de pesquisa onde o objetivo principal é o desenvolvimento de mecanismos para automatizar e tornar energeticamente eficiente a exploração do paralelismo no nível de threads em sistemas multiprocessados (e.g., embarcados, propósito geral e computação de alto desempenho). Dentro deste nicho, são realizadas pesquisas em diferentes interfaces de programação paralela (e.g., OpenMP, PThreads, Cilk++, Intel TBB e MPI), diferentes métodos para otimizar a exploração do paralelismo (e.g., estratégias de busca) e questões arquiteturais, como por exemplo, DVFS, tecnologias de boosting.
+                        </p>
+                    </div>
+                    <div style="text-align: justify;" class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <span class="oi oi-link-intact" style="text-align: justify;"> </span><a style="color:  #000; " href="http://lattes.cnpq.br/2890260984567329"> Lattes </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> ResearchGate </a>  
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Google schoolar  </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Webpage  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="card text-center" style="width: 71%; margin-left: 25.7%; margin-top: 3%; ">
+            <div class="card-header" style="border-bottom: 1px solid rgba(45, 132, 45, 0.31); ">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home1-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home1" aria-selected="true" style="color: #2d842d">Professor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile1-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile1" aria-selected="false" style="color: #2d842d">Descrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact1-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact1" aria-selected="false" style="color: #2d842d">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home1-tab">
+                        <h5 class="card-title" style="text-align: justify;">Prof. Dr. Claudio Schepke </h5>
+                        <p class="card-text" style=" text-align: justify;">Áreas de pesquisa:</p>
+                        
+                        <p style="text-align: justify;" class="text recuo">  Processamento de alto desempenho, Programação paralela, Aplicações científicas e Computação em nuvem </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile1-tab">
+                        <p style="text-align: justify;" class="text recuo">  Em diversas áreas da ciência existem algoritmos que demandam um elevado custo computacional. Uma alternativa para acelerar a execução destes algoritmos consiste na execução concorrente do código, tornando a obtenção das soluções numéricas factível ou obtidas em um tempo de processamento aceitável. Arquiteturas multicore e aceleradores com vários núcleos de processamento têm sido amplamente utilizados como uma alternativa eficiente e viável na busca por maior poder de processamento. Sistemas modernos são compostos por processadores multicore e aceleradores altamente especializados tais como GPUs e co-processadores Intel Xeon Phi. No entanto, fazer uso desse tipo de arquitetura requer aspectos de programação distintos, e que, portanto, devem ser investigados apropriadamente para garantir a maximização do aproveitamento dos recursos computacionais. Assim, usando diferentes interfaces de programação paralela combinadas, é possível comparar e analisar modos de se obter o melhor aproveitamento do hardware e consequentemente prover execuções mais eficientes para os programas. Baseado neste contexto, esta pesquisa investiga como explorar diferentes formas de paralelismo para diversas classes de aplicações usando interfaces de programação paralelas apropriadas, avaliar o desempenho de arquiteturas atuais e propor técnicas de divisão paralela da aplicações. O uso de diferentes interfaces de programação permite fazer uso de um conjunto maior de arquiteturas computacionais como multiprocessadores/multicore, manycore/coprocessadores e multicomputadores. Desta forma será possível prover maior desempenho na execução de aplicações científicas e comerciais em arquiteturas atuais e, consequentemente, ter soluções mais rápidas e/ou precisas, além de usar e propor algoritmos para a avaliação de arquiteturas computacionais.
+                        </p>
+                    </div>
+                    <div style="text-align: justify;" class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact1-tab">
+                        <span class="oi oi-link-intact" style="text-align: justify;"> </span><a style="color:  #000; " href="http://lattes.cnpq.br/2890260984567329"> Lattes </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> ResearchGate </a>  
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Google schoolar  </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Webpage  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card text-center" style="width: 71%; margin-left: 25.7%; margin-top: 3%; ">
+            <div class="card-header" style="border-bottom: 1px solid rgba(45, 132, 45, 0.31); ">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home2-tab" data-toggle="tab" href="#home2" role="tab" aria-controls="home2" aria-selected="true" style="color: #2d842d">Professor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile2-tab" data-toggle="tab" href="#profile2" role="tab" aria-controls="profile2" aria-selected="false" style="color: #2d842d">Descrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact2-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false" style="color: #2d842d">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home2" role="tabpanel" aria-labelledby="home2-tab">
+                        <h5 class="card-title" style="text-align: justify;">Prof. Dr.  João Pablo Silva da Silva</h5>
+                        <p class="card-text" style=" text-align: justify;">Áreas de pesquisa:</p>
+                        
+                        <p style="text-align: justify;" class="text recuo"> Engenharia de software inteligente, Linguagem específica de domínio, Sistemas auto-adaptativos </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile2-tab">
+                        <p style="text-align: justify;" class="text recuo">  O prof. João Pablo desenvolve pesquisas em Engenharia de Software Inteligente, onde explora a sinergia entre Inteligência Artificial e a Engenharia de Software. Atualmente, coordena o projeto de pesquisa chamado “Uma Linguagem de Modelagem de Domínio Específico para Sistemas Autoadaptativos”, o qual busca desenvolver uma linguagem de modelagem de domínio específico baseada em UML para a modelagem conceitual de sistemas autoadaptativos. Complementarmente, atua no projeto “Engenharia de Requisitos para Sistemas multiagentes”, o qual busca desenvolver técnicas de engenharia de requisitos para sistemas multiagentes.
+                        </p>
+                    </div>
+                    <div style="text-align: justify;" class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact2-tab">
+                        <span class="oi oi-link-intact" style="text-align: justify;"> </span><a style="color:  #000; " href="http://lattes.cnpq.br/2890260984567329"> Lattes </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> ResearchGate </a>  
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Google schoolar  </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Webpage  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="card text-center" style="width: 71%; margin-left: 25.7%; margin-top: 3%; margin-bottom: 3%">
+            <div class="card-header" style="border-bottom: 1px solid rgba(45, 132, 45, 0.31); ">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home3-tab" data-toggle="tab" href="#home3" role="tab" aria-controls="home3" aria-selected="true" style="color: #2d842d">Professor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile3-tab" data-toggle="tab" href="#profile3" role="tab" aria-controls="profile3" aria-selected="false" style="color: #2d842d">Descrição</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact3-tab" data-toggle="tab" href="#contact3" role="tab" aria-controls="contact3" aria-selected="false" style="color: #2d842d">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="card-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home3" role="tabpanel" aria-labelledby="home3-tab">
+                        <h5 class="card-title" style="text-align: justify;">Prof. Ms. Diego Luis Kreutz </h5>
+                        <p class="card-text" style=" text-align: justify;">Áreas de pesquisa:</p>
+                        
+                        <p style="text-align: justify;" class="text recuo"> Redes definidas por software (SDN),  segurança, dependabilidade, computação em nuvem e desenvolvimento de software. </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile3" role="tabpanel" aria-labelledby="profile3-tab">
+                        <p style="text-align: justify;" class="text recuo">  Tenho projetos e/ou interesse de pesquisa e inovação em áreas e temas como redes programáveis (e.g. SDN), segurança de infra-estruturas de rede, segurança da informação, segurança de sistemas, tolerância a falhas e intrusões, escalabilidade em computação em núvem e desenvolvimento de sistemas aplicados ao mercado. As colaborações mais recentes em pesquisa e inovação foram com pesquisadores de universidades e empresas como a UFSC, UNISINOS, UFAM, UFPA, UNICAMP, ULisboa/Portugal, UnBabel/Portugal, UNI.lu/Luxemburgo e Universidade de Monash/Austrália. Alguns dos temas de trabalhos (recentes) incluem: segurança em redes programáveis, blockchain, cryptomoedas, vulnerabilidades e ataques em sistemas Web, Web Application Firewalls, bancos de dados cifrados, integridade e confidencialidade no armazenamento e processamento de dados, segurança das urnas eletrônicas, protocolos de segurança, computação confiável, segurança assistida por hardware (novas tecnologias), armazenamento de grandes volumes de dados para internet das coisas (IoT), identidade digital segura, segurança em aplicações e bancos online, ataques a infra-estruturas de redes, entre outros.
+                        </p>
+                    </div>
+                    <div style="text-align: justify;" class="tab-pane fade" id="contact3" role="tabpanel" aria-labelledby="contact3-tab">
+                        <span class="oi oi-link-intact" style="text-align: justify;"> </span><a style="color:  #000; " href="http://lattes.cnpq.br/2890260984567329"> Lattes </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> ResearchGate </a>  
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Google schoolar  </a>
+                        <br>
+                        <span class="oi oi-link-intact"> </span><a style="color:  #000;" href="http://lattes.cnpq.br/2890260984567329"> Webpage  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a id="subirTopo">
+                ^ TOPO <br> 
+        </a>
+        <div class="rodape" style="z-index: 5000;">
+            <nav class="navbar navbar-white bg-white">
+                <span class="navbar">© 2014 Universidade Federal do Pampa - UNIPAMPA</span>
+            </nav>
+        </div>
+    </body>
+</html>

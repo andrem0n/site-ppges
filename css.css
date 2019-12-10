@@ -1,0 +1,79 @@
+.menu{
+    border-bottom: 2px solid #2d842d;
+    background-color: white;
+}
+
+.rodape{
+    border-top: 2px solid #2d842d;
+    background-color: white;
+    font-size: 14px;
+}
+
+body{
+    background-color: #e8e8e8;
+}
+
+
+#subirTopo {
+text-decoration: none;
+background: rgba(45, 132, 45, 0.9);
+bottom: 50px;
+right: 30px;
+color: #fff;
+text-align: center;
+cursor:  progress;
+padding: 15px;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+position: fixed;
+border: 0;
+font-family: sans-serif;
+}
+
+#subirTopo:hover {
+opacity:1;
+}
+
+.card{
+    border-radius: 0%;
+}
+
+.submenu{
+    color: black;
+    background-color: darkgreen;
+    border-radius: none;
+}
+.container{
+    background-color: white;
+    margin-top: 3%;
+    margin-right: 0%;
+    
+   
+}
+
+
+.nav-pills .nav-link.active{
+    background-color: white;
+    border-bottom: 2px solid #2d842d;
+    color: #2d842d;
+    border-radius: none;
+    
+}
+th{
+    margin-top: 2%;
+    font-size: 25px;
+   
+}
+
+.recuo { 
+    text-align: justify;
+    text-indent:4em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.lista{
+    margin-right: 2%;
+    text-align: justify;
+}

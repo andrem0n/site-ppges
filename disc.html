@@ -1,0 +1,437 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Disciplinas</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+
+        jQuery("#subirTopo").hide();
+
+        jQuery('a#subirTopo').click(function () {
+                 jQuery('body,html').animate({
+                   scrollTop: 0
+                 }, 800);
+                return false;
+           });
+
+        jQuery(window).scroll(function () {
+                 if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                 } else {
+                    jQuery('#subirTopo').fadeOut();
+                 }
+             });
+        });
+            
+            
+        function trocar(){
+        var obj=document.getElementById('apresentacao');
+        if(obj.className==''){
+            obj.className='apresent';
+        }
+        }
+        </script>
+    </head>
+    
+    <body>
+        <div class="menu">
+            <a  href="index.html"> <img src="icone.png" class="img-fluid" style="width: 40%; height: auto; margin-left: 3%; margin-top: 3%; margin-bottom: 1%;"> </a> 
+            <a  href="index.html"> <img src="uni.png"  style="width: 13%; height: auto; margin-right: 5%;" class="rounded float-right" class="img-fluid"> </a> 
+            
+        </div> 
+       
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white"  id="navbar-example3" style="max-width: 18rem; float:left; margin-top: 3%; margin-left: 3%; border-radius: none;  "   >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupporteContent" aria-controls="navbarSupporteContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupporteContent">
+                <nav class="nav flex-column">
+                   
+                        <a  class="card-header bg-transparent border-success" style="color:  #000;" >MENU</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="index.html">Home</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="informes.html">Informes</a>
+                     
+                        <a class="nav-link" style="color:  #000;"  href="coord.html">Coordenação</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="prof.html">Professores Orientadores</a>
+                                            
+                        <a class="nav-link" style="color:  #000;"  href="eventos.html">Eventos</a>
+                       
+                        <a class="nav-link" style="color:  #000;"  href="ciclo.html">Ciclo de Seminários e Palestras</a>
+                    
+                        <a class="nav-link" style="color:  #000;"  href="disc.html">Disciplinas do Mestrado</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="aluno.html">Alunos</a>
+                      
+                        <a class="nav-link" style="color:  #000;" href="publi.html">Publicações </a>
+                        
+                </nav>
+            </div>
+        </nav>
+        
+        
+        
+         <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+            <div class="container" style="max-width: 73%;  margin-left: 25.7%; padding-top: 2%; margin-bottom: 3%;" >
+                <div class="row">
+                    <div class="col">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <table class="table" style="border: none;" >
+                                   
+                                        <tr style="border: none;" >
+                                          <th style="border: none;" id="item-1">Discplinas</th>
+                                        </tr>
+                                   
+                                    <tbody style="border: none;" >
+                                        <tr>
+                                            <td style="border: none;"> 
+                                               <table class="table table-bordered" >
+                                                            <colgroup>
+                                                            <col width="69">
+                                                            <col width="367">
+                                                            <col width="94">
+                                                            <col width="53">
+                                                            <col width="47"></colgroup>
+                                                            <tbody>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">Código</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Disciplina</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Obrigatória</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">CH</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">CR</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5082</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Otimização e Complexidade de Algoritmos</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Sim</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5083</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Engenharia de Software Experimental</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Sim</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5084</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Desenvolvimento de Software</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Sim</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5085</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Verificação e Validação de Software</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5086</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Segurança de Sistemas</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 72px">
+                                                            <td style="height: 72px;width: 63px">
+                                                            <p dir="ltr">AL5087</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 338px">
+                                                            <p dir="ltr">Projeto e Desenvolvimento de Programas Paralelos</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5088</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Programabilidade de Infraestruturas de Rede</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5089</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Modelagem de Software</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5090</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Engenharia de Software Orientada a Agentes</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 72px">
+                                                            <td style="height: 72px;width: 63px">
+                                                            <p dir="ltr">AL5091</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 338px">
+                                                            <p dir="ltr">Aprendizagem de Máquina Aplicada à Engenharia de Software</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 47px">
+                                                            <p dir="ltr">30</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 41px">
+                                                            <p dir="ltr">2</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 72px">
+                                                            <td style="height: 72px;width: 63px">
+                                                            <p dir="ltr">AL5092</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 338px">
+                                                            <p dir="ltr">Interação Humano-computador no Desenvolvimento de Software</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 72px">
+                                                            <td style="height: 72px;width: 63px">
+                                                            <p dir="ltr">AL5093</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 338px">
+                                                            <p dir="ltr">Processamento de Linguagem Natural Aplicado à Engenharia de Software</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 47px">
+                                                            <p dir="ltr">30</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 41px">
+                                                            <p dir="ltr">2</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 72px">
+                                                            <td style="height: 72px;width: 63px">
+                                                            <p dir="ltr">AL5094</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 338px">
+                                                            <p dir="ltr">Engenharia de Software Aplicada a Sistemas Embarcados</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 89px">
+                                                            <p dir="ltr">Não</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 47px">
+                                                            <p dir="ltr">60</p>
+                                                            </td>
+                                                            <td style="height: 72px;width: 41px">
+                                                            <p dir="ltr">4</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5013</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Estágio Supervisionado de Docência</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Sim</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">15</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">1</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5038</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Exame de Proficiência de Língua Estrangeira</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Sim</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">–</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px"></td>
+                                                            </tr>
+                                                            <tr style="height: 48px">
+                                                            <td style="height: 48px;width: 63px">
+                                                            <p dir="ltr">AL5039</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 338px">
+                                                            <p dir="ltr">Exame de Qualificação</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 89px">
+                                                            <p dir="ltr">Sim</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 47px">
+                                                            <p dir="ltr">–</p>
+                                                            </td>
+                                                            <td style="height: 48px;width: 41px">
+                                                            <p dir="ltr">–</p>
+                                                            </td>
+                                                            </tr>
+                                                            <tr style="height: 29px">
+                                                            <td style="height: 29px;width: 63px">
+                                                            <p dir="ltr">AL5040</p>
+                                                            </td>
+                                                            <td style="height: 29px;width: 338px">
+                                                            <p dir="ltr">Defesa de Dissertação</p>
+                                                            </td>
+                                                            <td style="height: 29px;width: 89px">
+                                                            <p dir="ltr">Sim</p>
+                                                            </td>
+                                                            <td style="height: 29px;width: 47px">
+                                                            <p dir="ltr">–</p>
+                                                            </td>
+                                                            <td style="height: 29px;width: 41px">
+                                                            <p dir="ltr">–</p>
+                                                            </td>
+                                                            </tr>
+                                                            </tbody>
+                                                            </table> 
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        
+        
+         <a id="subirTopo">
+                ^ TOPO <br> 
+        </a>
+        <div class="rodape">
+            <nav class="navbar navbar-white bg-white">
+                <span class="navbar">© 2014 Universidade Federal do Pampa - UNIPAMPA</span>
+            </nav>
+        </div>
+    </body>
+</html>

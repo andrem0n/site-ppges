@@ -1,0 +1,311 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Coordenação</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function(){
+
+        jQuery("#subirTopo").hide();
+
+        jQuery('a#subirTopo').click(function () {
+                 jQuery('body,html').animate({
+                   scrollTop: 0
+                 }, 800);
+                return false;
+           });
+
+        jQuery(window).scroll(function () {
+                 if (jQuery(this).scrollTop() > 1000) {
+                    jQuery('#subirTopo').fadeIn();
+                 } else {
+                    jQuery('#subirTopo').fadeOut();
+                 }
+             });
+        });
+            
+            
+        function trocar(){
+        var obj=document.getElementById('apresentacao');
+        if(obj.className==''){
+            obj.className='apresent';
+        }
+        }
+        </script>
+    </head>
+    
+    <body>
+        <div class="menu">
+            <a  href="index.html"> <img src="icone.png" class="img-fluid" style="width: 40%; height: auto; margin-left: 3%; margin-top: 3%; margin-bottom: 1%;"> </a> 
+            <a  href="index.html"> <img src="uni.png"  style="width: 13%; height: auto; margin-right: 5%;" class="rounded float-right" class="img-fluid"> </a> 
+            
+        </div> 
+       
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white"  id="navbar-example3" style="max-width: 18rem; float:left; margin-top: 3%; margin-left: 3%; border-radius: none;  "   >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupporteContent" aria-controls="navbarSupporteContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupporteContent">
+                <nav class="nav flex-column">
+                   
+                        <a  class="card-header bg-transparent border-success" style="color:  #000;" >MENU</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="index.html">Home</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="informes.html">Informes</a>
+                     
+                        <a class="nav-link" style="color:  #000;"  href="coord.html">Coordenação</a>
+                      
+                        <a class="nav-link" style="color:  #000;"  href="prof.html">Professores Orientadores</a>
+                                            
+                        <a class="nav-link" style="color:  #000;"  href="eventos.html">Eventos</a>
+                       
+                        <a class="nav-link" style="color:  #000;"  href="ciclo.html">Ciclo de Seminários e Palestras</a>
+                    
+                        <a class="nav-link" style="color:  #000;"  href="disc.html">Disciplinas do Mestrado</a>
+                        
+                        <a class="nav-link" style="color:  #000;"  href="aluno.html">Alunos</a>
+                      
+                        <a class="nav-link" style="color:  #000;" href="publi.html">Publicações </a>
+                        
+                </nav>
+            </div>
+        </nav>
+        
+
+        <div class="card" style="width: 40%; float: left; margin-left: 1.3%; margin-right: 1%; margin-top: 3%;">
+            <div class="card-body">
+                <h5 class="card-title">Coordenador: </h5>
+                <ul class="card-text">
+                    <li>Prof. Dr. Elder de Macedo Rodrigues </li>
+                </ul>  
+                <hr>
+                <p class="card-text" style="margin-left: 3%;"><span class="oi oi-paperclip"></span> E-mail: elderrodrigues@unipampa.edu.br</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 30%; float: none; margin-left: 2%; margin-top: 3%;" >
+            <div class="card-body">
+                <h5 class="card-title">Coordenador Substituto:</h5>
+                <ul class="card-text">
+                    <li>Prof. Dr. Fábio Paulo Basso </li>
+                </ul>  
+                <hr>
+                <p class="card-text" style="margin-left: 3%;"><span class="oi oi-paperclip"></span> E-mail: fabiobasso@unipampa.edu.br</p>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 71%; margin-left: 25.7%; margin-top: 1%;" >
+            <div class="card-body">
+                <h5 class="card-title">Comissão de Pós-Graduação:</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Membros Titulares: </h6>
+                <hr>
+                <table>
+                                    <tr>
+                                        <td>
+                                            <ul  class="card-text">
+                                                <li>Prof. Dr. Rodrigo Brandão Mansilha </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail: rodrigomansilha@unipampa.edu.br <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td class="text recuo">
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul  class="card-text">
+                                                <li>Prof. Dr. João Pablo Silva da Silva </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail:joaosilva@unipampa.edu.br
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td class="text recuo">
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul  class="card-text">
+                                                 <li> Prof. Dr. Arthur Francisco Lorenzon </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail: arthurlorenzon@unipampa.edu.br
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td class="text recuo">
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <ul  class="card-text">
+                                                <li>Prof. Dr. Gilleanes Thorwald Araujo Guedes </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail: gilleanesguedes@unipampa.edu.br
+                                        </td>
+                                    </tr>
+                                </table>
+                <br><br>
+                <h6 class="card-subtitle mb-2 text-muted">Membros Suplentes: </h6>
+                <hr>
+                <table>
+                                    <tr>
+                                        <td>
+                                            <ul  class="card-text">
+                                                <li>Prof. Mr. Diego Luis Kreutz </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail: diego.kreutz@unipampa.edu.br <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td class="text recuo">
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Coordenador do Curso de ES:
+                                            <ul  class="card-text">
+                                                <li>Prof. Dr. Maicon Bernardino da Silveira </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail:bernardino@unipampa.edu.br
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td class="text recuo">
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Coordenador do Curso de CC:
+                                            <ul  class="card-text">
+                                                 <li>  Prof. Dr. Marcelo Caggiani Luizelli </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail: mcluizelli@gmail.com
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                        </td>
+                                        <td class="text recuo">
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Coordenador do Curso de ES e CC:
+                                            <ul  class="card-text">
+                                                <li>Prof. Dr. Claudio Schepke </li>
+                                            </ul> 
+                                        </td>
+                                        <td class="text recuo">
+                                            <span class="oi oi-paperclip"></span> E-mail: claudioschepke@unipampa.edu.br
+                                        </td>
+                                    </tr>
+                                </table>
+            </div>
+        </div>
+            
+        <div class="card" style="width: 30%; float: left; margin-left: 25.7%; margin-right: 1%; margin-top: 1%;" >
+            <div class="card-body">
+                <h5 class="card-title">Comissão de Bolsas:</h5>
+                <hr>
+                <ul class="card-text">
+                    <li>Elder de Macedo Rodrigues </li>
+                </ul> 
+                <ul class="card-text">
+                    <li>Gilleanes Thorwald Araujo Guedes</li>
+                </ul>
+                <ul class="card-text">
+                    <li>Maicon Bernardino da Silveira</li>
+                </ul> 
+                <ul class="card-text">
+                    <li>Marcelo Caggiani Luizelli</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card" style="width: 40%; float: none; margin-left: 2%; margin-top: 1%;" >
+            <div class="card-body">
+                <h5 class="card-title">Comissão Acompanhamento da Produção Docente:</h5>
+                <hr>
+                <ul class="card-text">
+                    <li>Fábio Paulo Basso </li>
+                </ul> 
+                <ul class="card-text">
+                    <li>João Pablo Silva da Silva</li>
+                </ul>
+                <ul class="card-text">
+                    <li>Rodrigo Brandão Mansilha</li>
+                </ul>
+                <ul class="card-text">
+                    <br>
+                </ul> 
+            </div>
+        </div>
+        <div class="card" style="width: 71%; float: none; margin-left: 25.7%; margin-top: 1%; margin-bottom: 3%; " >
+                    <div class="card-body">
+                        <h5 class="card-title">Secretário Acadêmico:</h5>
+                        <ul class="card-text">
+                            <li>Thiago Gomes </li>
+                        </ul>  
+                        <hr>
+                        <p class="card-text" style="margin-left: 3%;"><span class="oi oi-paperclip"></span> E-thiagogomes@unipampa.edu.br</p>
+                    </div>
+        </div>
+        
+            
+        
+      
+        <a id="subirTopo">
+                ^ TOPO <br> 
+        </a>
+        <div class="rodape" style="z-index: 5000;">
+            <nav class="navbar navbar-white bg-white">
+                <span class="navbar">© 2014 Universidade Federal do Pampa - UNIPAMPA</span>
+            </nav>
+        </div>
+    </body>
+</html>
